@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>Cuenta regresiva</title>
+</head>
+<body>
+    <div class="container">
+        <div class="marcador">
+            <div class="horas">
+                <p id="horas-p">00</p>
+                <input type="number" class="cantidad" id="cant-horas" min="00" max="24" placeholder="Seleccione horas" onkeydown="return false">
+                <p class="cantidad-p">Horas</p>
+            </div>
+            <div class="puntos">
+                <p>:</p>
+            </div>
+            <div class="minutos">
+                <p id="minutos-p">00</p>
+                <input type="number" class="cantidad" id="cant-minutos" min="0" max="59" placeholder="Seleccione minutos" onkeydown="return false">
+                <p class="cantidad-p">Minutos</p>
+            </div>
+            <div class="puntos">
+                <p>:</p>
+            </div>
+            <div class="segundos">
+                <p id="segundos-p">00</p>
+                <input type="number" class="cantidad" id="cant-segundos" min="0" max="59" placeholder="Seleccione segundos" onkeydown="return false">
+                <p class="cantidad-p">Segundos</p>
+            </div>
+        </div>
+
+        <div class="botones">
+            <button class="iniciar boton">Iniciar</button>
+            <button class="pausar boton">Pausar</button>
+            <button class="detener boton">Detener</button>
+        </div>
+        
+       
+    </div>
+    
+</body>
+</html>
